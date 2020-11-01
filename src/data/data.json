@@ -1,0 +1,34 @@
+[{
+    "Title": "Game Portal",
+    "Description": "Game Portal is video game database and game discovery service that consists of 350,000+ games.",
+    "Tech": ["React", "Next.js", "Node.js", "Firebase"],
+    "Libraries": ["SWR", "Material UI", "Redux", "Formik", "yup", "react-slick", "lazy-load-image"],
+    "git_url": "https://github.com/can-ates/game-portal",
+    "web_url": "https://game-portal.vercel.app/"
+},
+{
+    "Title": "Unite",
+    "Description": "Unite is a community app that unites all people that has same interest. You can find communities that you want to be part of or create a new one to lead a community!",
+    "Tech": ["React", "Node.js", "Express.js", "MongoDB"],
+    "Libraries": ["Redux", "Material UI", "Mongoose", "Cloudinary"],
+    "git_url": "https://github.com/can-ates/UNITE",
+    "web_url": "https://unitecommunityapp.herokuapp.com/"
+},
+{
+    "Title": "Gab",
+    "Description": "Gab is a real-time chat app that you can create or join a room to interact with other people.",
+    "Tech": ["React", "Node.js", "Feathers.js", "MongoDB"],
+    "Libraries": ["Redux", "React Bootstrap", "Mongoose"],
+    "git_url": "https://github.com/can-ates/gab-frontend",
+    "web_url": "gab-frontend.vercel.app"
+},
+{
+    "Title": "Corona Tracker",
+    "Description": "By fetching datas from disease.sh, It showes corona cases around the world using google map API",
+    "Tech": ["React", "Node.js"],
+    "Libraries": ["Chart.js", "Styled Components", "React Google Maps"],
+    "git_url": "https://github.com/can-ates/corona-tracker",
+    "web_url": "can-ates.github.io/corona-tracker/"
+    
+}
+]

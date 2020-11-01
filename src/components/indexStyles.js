@@ -28,7 +28,7 @@ export const Name = styled.h1`
 
 export const Navigation = styled.div`
   padding-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -45,8 +45,8 @@ export const Button = styled.button`
   &:before {
     position: absolute;
     content: "";
-    top: -47px;
-    left: -30px;
+    top: -46px;
+    left: -37px;
     background: ${props => (props.backo ? `url(${props.backo})` : null)};
     background-repeat: no-repeat;
     background-size: 100% 95%;
