@@ -1,20 +1,7 @@
 import styled from "styled-components/macro"
 
-export const Wrapper = styled.div`
-  max-width: 1440px;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-`
-
-export const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 5rem 5rem 0 5rem;
-`
-
 //LEFT COLUMN
-export const Me = styled.div`
+export const Wrapper = styled.div`
   flex: 0.4;
 
   cursor: default;
@@ -56,7 +43,7 @@ export const Button = styled.button`
   }
 
   &:hover {
-    color: ${props => (props.backo ? "white" : "#c3073f")};
+    color: ${props => (props.backo ? "white" : "#45a29e")};
   }
 `
 
@@ -65,8 +52,4 @@ export const About = styled.p`
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 2.5rem;
-`
-
-export const Works = styled.div`
-  flex: 0.6;
 `
