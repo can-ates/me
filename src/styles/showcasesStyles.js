@@ -4,6 +4,22 @@ export const Wrapper = styled.div`
   flex: 0.6;
 `
 
+//SECTION
+export const Section = styled.h1`
+  font-weight: 700;
+  
+  background: -webkit-linear-gradient(#45a29e, #66fcf1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 35rem;
+  width: 100%;
+  margin-left: auto;
+  cursor: default;
+  margin-bottom: 1.1rem;
+`
+
+//CARD
 export const ProjectCard = styled.div`
   background-color: #1f2833;
   max-width: 35rem;
@@ -13,12 +29,11 @@ export const ProjectCard = styled.div`
   border-radius: 10px;
   margin-bottom: 1rem;
   opacity: 0.8;
-  transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-  cursor: default;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover {
     opacity: 1;
-    transform: scaleY(1.22) scaleX(1.1);
+    transform: scale(1.16);
   }
 
   &:last-child {
@@ -39,12 +54,13 @@ export const Image = styled.img`
 
 export const Title = styled.h3`
   font-weight: 500;
-  color: white;
+  
   background: -webkit-linear-gradient(#45a29e, #66fcf1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   align-self: center;
+  cursor: default;
 `
 
 //CARD_BODY
@@ -56,4 +72,38 @@ export const Description = styled.p`
   color: #c5c6c7;
   line-height: 1.5rem;
   font-weight: 400;
+  cursor: default;
 `
+//CARD_LINKS
+export const Links = styled.div`
+  display: flex;
+
+  margin-top: 1.5rem;
+`
+
+export const Button = styled.button`
+  cursor: pointer;
+  padding: 0.66em;
+  border-radius: 15px;
+  opacity: 0.7;
+  background-color: #46344e;
+  color: #66fcf1;
+  text-decoration: none;
+  &:hover {
+    opacity: 1;
+  }
+`
+
+export const GithubButton = styled(Button)`
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+`
+
+export const GithubImage = styled(Image)`
+  margin: 0;
+  margin-left: 0.5rem;
+  opacity: 1;
+`
+
+export const LiveButton = styled(Button)``
