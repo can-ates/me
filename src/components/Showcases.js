@@ -1,7 +1,15 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { Wrapper, ProjectCard, Image, Title } from "../styles/showcasesStyles"
+import {
+  Wrapper,
+  ProjectCard,
+  Header,
+  Image,
+  Title,
+  Body,
+  Description
+} from "../styles/showcasesStyles"
 
 const Showcases = () => {
   const data = useStaticQuery(
@@ -25,13 +33,20 @@ const Showcases = () => {
   return (
     <Wrapper>
       {data.allDataJson.nodes.map(project => (
-        <ProjectCard href="">
-          <div>
-            {project.svgs.map(svg => (
-              <Image src={require("../images/" + svg + ".svg")} />
-            ))}
-          </div>
-          <Title>{project.title}</Title>
+        <ProjectCard >
+          <Header>
+            <Title>{project.title}</Title>
+            <div>
+              {project.svgs.map(svg => (
+                <Image src={require("../images/" + svg + ".svg")} />
+              ))}
+            </div>
+          </Header>
+          <Body>
+              <Description>
+                {project.description}
+              </Description>  
+          </Body>
         </ProjectCard>
       ))}
     </Wrapper>

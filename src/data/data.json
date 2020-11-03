@@ -45,5 +45,41 @@
         "nodejs"
         ]
     
+},
+{
+    "title": "Corona Tracker",
+    "description": "By fetching datas from disease.sh, It showes corona cases around the world using google map API",
+    "tech": ["React", "Node.js"],
+    "libraries": ["Chart.js", "Styled Components", "React Google Maps"],
+    "git_url": "https://github.com/can-ates/corona-tracker",
+    "web_url": "can-ates.github.io/corona-tracker/",
+    "svgs": ["react",
+        "nodejs"
+        ]
+    
+},
+{
+    "title": "Corona Tracker",
+    "description": "By fetching datas from disease.sh, It showes corona cases around the world using google map API",
+    "tech": ["React", "Node.js"],
+    "libraries": ["Chart.js", "Styled Components", "React Google Maps"],
+    "git_url": "https://github.com/can-ates/corona-tracker",
+    "web_url": "can-ates.github.io/corona-tracker/",
+    "svgs": ["react",
+        "nodejs"
+        ]
+    
+},
+{
+    "title": "Corona Tracker",
+    "description": "By fetching datas from disease.sh, It showes corona cases around the world using google map API",
+    "tech": ["React", "Node.js"],
+    "libraries": ["Chart.js", "Styled Components", "React Google Maps"],
+    "git_url": "https://github.com/can-ates/corona-tracker",
+    "web_url": "can-ates.github.io/corona-tracker/",
+    "svgs": ["react",
+        "nodejs"
+        ]
+    
 }
 ]

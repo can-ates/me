@@ -3,6 +3,9 @@ import styled from "styled-components/macro"
 //LEFT COLUMN
 export const Wrapper = styled.div`
   flex: 0.4;
+  position: sticky;
+  height: 100%;
+  top: 5rem;
 
   cursor: default;
 `
