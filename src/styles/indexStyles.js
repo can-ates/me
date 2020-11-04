@@ -12,6 +12,7 @@ export const Content = styled.div`
   justify-content: space-between;
   padding: 5rem 5rem 0 5rem;
   gap: 5rem;
+  
 `
 
 

@@ -2,19 +2,18 @@ import styled from "styled-components/macro"
 
 export const Wrapper = styled.div`
   flex: 0.6;
+  max-width: 35rem;
+  width: 100%;
+  margin-left: auto;
 `
 
 //SECTION
 export const Section = styled.h1`
   font-weight: 700;
-  
   background: -webkit-linear-gradient(#45a29e, #66fcf1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  max-width: 35rem;
-  width: 100%;
-  margin-left: auto;
   cursor: default;
   margin-bottom: 1.1rem;
 `
@@ -22,14 +21,11 @@ export const Section = styled.h1`
 //CARD
 export const ProjectCard = styled.div`
   background-color: #1f2833;
-  max-width: 35rem;
-  width: 100%;
-  margin-left: auto;
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1rem;
   opacity: 0.8;
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     opacity: 1;
@@ -54,7 +50,7 @@ export const Image = styled.img`
 
 export const Title = styled.h3`
   font-weight: 500;
-  
+
   background: -webkit-linear-gradient(#45a29e, #66fcf1);
   background-clip: text;
   -webkit-background-clip: text;

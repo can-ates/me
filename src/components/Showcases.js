@@ -39,14 +39,14 @@ const Showcases = () => {
 
   return (
     <Wrapper>
-      <Section>Projects</Section>
+      <Section id="Projects">Projects</Section>
       {data.allDataJson.nodes.map(project => (
-        <ProjectCard>
+        <ProjectCard key={project.title}>
           <Header>
             <Title>{project.title}</Title>
             <div>
               {project.svgs.map(svg => (
-                <Image src={require("../images/" + svg + ".svg")} />
+                <Image key={`${svg}-${project.title}`} src={require("../images/" + svg + ".svg")} />
               ))}
             </div>
           </Header>
@@ -65,6 +65,7 @@ const Showcases = () => {
           </Links>
         </ProjectCard>
       ))}
+      <div id="Stacks" >afasdasd</div>
     </Wrapper>
   )
 }

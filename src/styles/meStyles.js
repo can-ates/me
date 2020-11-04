@@ -4,9 +4,10 @@ import styled from "styled-components/macro"
 export const Wrapper = styled.div`
   flex: 0.4;
   position: sticky;
-  height: 100%;
+  height: calc(100vh - 5rem);
   top: 5rem;
-
+  display: flex;
+  flex-direction: column;
   cursor: default;
 `
 
@@ -14,14 +15,6 @@ export const Name = styled.h1`
   font-weight: 900;
   font-size: 4rem;
   line-height: 4rem;
-`
-
-export const Navigation = styled.div`
-  padding-left: 1rem;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 `
 
 export const Button = styled.button`
@@ -50,9 +43,27 @@ export const Button = styled.button`
   }
 `
 
-export const About = styled.p`
+export const About = styled.h1`
   margin-top: 2rem;
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 2.5rem;
+`
+
+export const Navigation = styled.div`
+  padding-left: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`
+
+export const Social = styled.div`
+  margin-top: auto;
+  display: flex;
+  
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
 `
