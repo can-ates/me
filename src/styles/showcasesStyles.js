@@ -7,9 +7,13 @@ export const Wrapper = styled.div`
   margin-left: auto;
 `
 
+//PROJECTS
+export const Projects = styled.div``
+
 //SECTION
 export const Section = styled.h1`
   font-weight: 700;
+  font-size: 2.5rem;
   background: -webkit-linear-gradient(#45a29e, #66fcf1);
   background-clip: text;
   -webkit-background-clip: text;
@@ -24,16 +28,10 @@ export const ProjectCard = styled.div`
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1rem;
-  opacity: 0.8;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    opacity: 1;
     transform: scale(1.16);
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 `
 
@@ -103,3 +101,7 @@ export const GithubImage = styled(Image)`
 `
 
 export const LiveButton = styled(Button)``
+
+//SKILLS
+export const Skills = styled.div`
+`

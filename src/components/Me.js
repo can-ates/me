@@ -27,7 +27,7 @@ const Me = () => {
       })
     })
 
-    observer.observe(document.querySelector("#Stacks"))
+    observer.observe(document.querySelector("#Skills"))
   }, [])
 
   return (
@@ -60,10 +60,10 @@ const Me = () => {
           backo={section === 2 ? bgBrush : false}
           onClick={() => {
             setSection(2)
-            scrollTo("#Stacks")
+            scrollTo("#Skills")
           }}
         >
-          Stacks
+          Skills
         </Button>
       </Navigation>
       <Social>

@@ -30,6 +30,7 @@ export const Button = styled.button`
     content: "";
     top: -46px;
     left: -37px;
+    display: ${props => (props.backo ? 'block' : 'none')};
     background: ${props => (props.backo ? `url(${props.backo})` : null)};
     background-repeat: no-repeat;
     background-size: 100% 95%;
