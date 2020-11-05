@@ -7,8 +7,10 @@ export const Wrapper = styled.div`
   margin-left: auto;
 `
 
-//PROJECTS
-export const Projects = styled.div``
+//PROJECTS-SKILLS CONTAINER
+export const Container = styled.div`
+  margin-bottom: 3rem;
+`
 
 //SECTION
 export const Section = styled.h1`
@@ -19,7 +21,7 @@ export const Section = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: default;
-  margin-bottom: 1.1rem;
+  margin-bottom: 3rem;
 `
 
 //CARD
@@ -104,4 +106,51 @@ export const LiveButton = styled(Button)``
 
 //SKILLS
 export const Skills = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+`
+
+export const Skill = styled.div`
+  position: relative;
+
+  &:hover a {
+    display: block;
+  }
+`
+
+export const TechName = styled.h1`
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  display: none;
+`
+
+export const Logo = styled(Image)`
+  opacity: 1;
+  margin: 0;
+  transition: opacity 0.5s ease;
+
+  
+
+  &:hover {
+    opacity: 0;
+    cursor: pointer;
+  }
+`
+
+export const Break = styled.div`
+  height: 5em;
+  width: 2px;
+  margin: 2rem auto;
+
+  background-color: #66fcf1;
 `

@@ -1,16 +1,66 @@
 [{
     "techs": [{
+        "name": "Html",
+        "image": "html5",
+        "url": "https://html.com/"
+    },
+    {
+        "name": "Css",
+        "image": "css3",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+        "name": "JavaScript",
+        "image": "javascript",
+        "url": "https://www.javascript.com/"
+    },{
         "name": "React",
-        "image": "adsasd",
-        "url": "adasdasd"
+        "image": "react",
+        "url": "https://reactjs.org/"
+    },{
+        "name": "Redux",
+        "image": "redux",
+        "url": "https://redux.js.org/"
+    },{
+        "name": "Gatsby",
+        "image": "gatsby",
+        "url": "https://www.gatsbyjs.com/"
+    },{
+        "name": "Next",
+        "image": "nextjs",
+        "url": "https://nextjs.org/"
     }]
     
 },
 {
-    "techs": [{
-        "name": "React",
-        "image": "adsasd",
-        "url": "adasdasd"
+    "techs": [
+    
+    {
+        "name": "MongoDB",
+        "image": "mongodb",
+        "url": "https://www.mongodb.com/"
+    },{
+        "name": "Firebase",
+        "image": "firebase",
+        "url": "https://firebase.google.com/"
+    },{
+        "name": "GraphQL",
+        "image": "graphql",
+        "url": "https://graphql.org/"
+    },
+    {
+        "name": "Node.js",
+        "image": "nodejs",
+        "url": "https://nodejs.org/en/"
+    },
+    {
+        "name": "FeathersJs",
+        "image": "feathersjs",
+        "url": "https://feathersjs.com/"
+    },{
+        "name": "Express.js",
+        "image": "expressjs",
+        "url": "https://expressjs.com/"
     }]
 }
 ]

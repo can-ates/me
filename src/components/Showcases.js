@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import {
   Wrapper,
-  Projects,
+  Container,
   Section,
   ProjectCard,
   Header,
@@ -15,24 +15,36 @@ import {
   GithubButton,
   GithubImage,
   LiveButton,
-  Skills
+  Skills,
+  Skill,
+  TechName,
+  Logo,
+  Break,
 } from "../styles/showcasesStyles"
 
 import githubIcon from "../images/github.svg"
 
 const Showcases = () => {
-  const projects = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
       query {
+        allSkillsJson {
+          nodes {
+            techs {
+              image
+              name
+              url
+            }
+          }
+        }
         allProjectsJson {
           nodes {
-            title
-            description
-            tech
-            libraries
-            git_url
             web_url
+            title
+            tech
             svgs
+            git_url
+            description
           }
         }
       }
@@ -41,10 +53,10 @@ const Showcases = () => {
 
   return (
     <Wrapper>
-      <Projects >
+      <Container id="Projects">
         <Section>Projects</Section>
-        {projects.allProjectsJson.nodes.map(project => (
-          <ProjectCard  key={project.title}>
+        {data.allProjectsJson.nodes.map(project => (
+          <ProjectCard key={project.title}>
             <Header>
               <Title>{project.title}</Title>
               <div>
@@ -71,10 +83,42 @@ const Showcases = () => {
             </Links>
           </ProjectCard>
         ))}
-      </Projects>
-      <Skills id="Skills">
-           <Section>Skills</Section>       
-      </Skills>
+      </Container>
+      <Container id="Skills">
+        <Section>Skills</Section>
+
+        <Skills>
+          {data.allSkillsJson.nodes[0].techs.map(skill => (
+            <Skill>
+              <TechName as="a" href={skill.url} target="_blank">
+                {skill.name}
+              </TechName>
+              <Logo
+                key={`${skill.url}`}
+                height="100px"
+                width="120px"
+                src={require("../images/" + skill.image + ".svg")}
+              />
+            </Skill>
+          ))}
+        </Skills>
+        <Break />
+        <Skills>
+          {data.allSkillsJson.nodes[1].techs.map(skill => (
+            <Skill>
+              <TechName as="a" href={skill.url} target="_blank">
+                {skill.name}
+              </TechName>
+              <Logo
+                key={`${skill.url}`}
+                height="100px"
+                width="120px"
+                src={require("../images/" + skill.image + ".svg")}
+              />
+            </Skill>
+          ))}
+        </Skills>
+      </Container>
     </Wrapper>
   )
 }
