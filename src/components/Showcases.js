@@ -84,13 +84,13 @@ const Showcases = () => {
           </ProjectCard>
         ))}
       </Container>
-      <Container id="Skills">
+      <Container>
         <Section>Skills</Section>
 
         <Skills>
           {data.allSkillsJson.nodes[0].techs.map(skill => (
-            <Skill>
-              <TechName as="a" href={skill.url} target="_blank">
+            <Skill key={skill.name}>
+              <TechName as="a">
                 {skill.name}
               </TechName>
               <Logo
@@ -102,11 +102,11 @@ const Showcases = () => {
             </Skill>
           ))}
         </Skills>
-        <Break />
+        <Break id="Skills" />
         <Skills>
           {data.allSkillsJson.nodes[1].techs.map(skill => (
-            <Skill>
-              <TechName as="a" href={skill.url} target="_blank">
+            <Skill key={skill.name}>
+              <TechName as="a">
                 {skill.name}
               </TechName>
               <Logo

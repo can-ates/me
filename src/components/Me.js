@@ -4,6 +4,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 import {
   Wrapper,
+  Hello,
   Name,
   About,
   Navigation,
@@ -33,13 +34,11 @@ const Me = () => {
   return (
     <Wrapper>
       <Name>
-        <span
-          style={{
-            color: "#66fcf1",
-          }}
+        <Hello
+         
         >
           Hello,
-        </span>{" "}
+        </Hello>{" "}
         I'm Mutlu Can Ates.
       </Name>
       <About>

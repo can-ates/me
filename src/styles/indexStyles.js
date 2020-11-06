@@ -9,11 +9,18 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding: 5rem 5rem 0 5rem;
-  gap: 5rem;
   
+
+
+  @media (min-width: 970px) {
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5rem 5rem 0 5rem;
+  }
+
+  @media (max-width: 969px){
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+  }
 `
-
-
-

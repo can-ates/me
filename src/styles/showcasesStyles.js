@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   max-width: 35rem;
   width: 100%;
   margin-left: auto;
+
+  @media (max-width: 969px) {
+    margin: 0;
+  }
 `
 
 //PROJECTS-SKILLS CONTAINER
@@ -29,11 +33,13 @@ export const ProjectCard = styled.div`
   background-color: #1f2833;
   padding: 1rem;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   transition: all 0.2s ease-in-out;
 
-  &:hover {
-    transform: scale(1.16);
+  @media (min-width: 970px) {
+    &:hover {
+      transform: scale(1.16);
+    }
   }
 `
 
@@ -46,6 +52,14 @@ export const Header = styled.div`
 export const Image = styled.img`
   opacity: 0.4;
   margin-right: 1rem;
+
+  @media (max-width: 969px) {
+    height: 30px;
+  }
+
+  @media (max-width: 430px) {
+    height: 21px;
+  }
 `
 
 export const Title = styled.h3`
@@ -57,6 +71,10 @@ export const Title = styled.h3`
   -webkit-text-fill-color: transparent;
   align-self: center;
   cursor: default;
+
+  @media (max-width: 430px) {
+    font-size: 1rem;
+  }
 `
 
 //CARD_BODY
@@ -69,6 +87,10 @@ export const Description = styled.p`
   line-height: 1.5rem;
   font-weight: 400;
   cursor: default;
+
+  @media (max-width: 430px) {
+    font-size: 0.9rem;
+  }
 `
 //CARD_LINKS
 export const Links = styled.div`
@@ -88,6 +110,10 @@ export const Button = styled.button`
   &:hover {
     opacity: 1;
   }
+
+  @media (max-width: 430px) {
+    padding: 0.5em;
+  }
 `
 
 export const GithubButton = styled(Button)`
@@ -100,9 +126,17 @@ export const GithubImage = styled(Image)`
   margin: 0;
   margin-left: 0.5rem;
   opacity: 1;
+  height: 17px;
+  width: 17px;
+
+  @media (max-width: 430px) {
+    display: none;
+  }
 `
 
-export const LiveButton = styled(Button)``
+export const LiveButton = styled(Button)`
+  vertical-align: middle;
+`
 
 //SKILLS
 export const Skills = styled.div`
@@ -115,8 +149,10 @@ export const Skills = styled.div`
 export const Skill = styled.div`
   position: relative;
 
-  &:hover a {
-    display: block;
+  @media (min-width: 970px) {
+    &:hover a {
+      display: block;
+    }
   }
 `
 
@@ -138,18 +174,25 @@ export const Logo = styled(Image)`
   opacity: 1;
   margin: 0;
   transition: opacity 0.5s ease;
+  height: 100px;
+  width: 120px;
 
-  
+  @media (max-width: 430px) {
+    height: 75px;
+    width: 90px;
+  }
 
-  &:hover {
-    opacity: 0;
-    cursor: pointer;
+  @media (min-width: 970px) {
+    &:hover {
+      opacity: 0;
+      cursor: pointer;
+    }
   }
 `
 
 export const Break = styled.div`
   height: 5em;
-  width: 2px;
+  width: 1px;
   margin: 2rem auto;
 
   background-color: #66fcf1;
