@@ -132,7 +132,7 @@ export const Border = styled.div`
   background-color: #45a29e;
   transform: translate(-50%, -50%);
   top: 46.5%;
-  left: 50%;
+  left: 49%;
   border-radius: 50%;
   z-index: -1;
 
