@@ -23,4 +23,9 @@ export const Content = styled.div`
     align-items: center;
     padding: 2rem 2rem 0 2rem;
   }
+
+  @media (max-width: 430px){
+    
+    padding: 1.2rem 1.2rem 0 1.2rem;
+  }
 `

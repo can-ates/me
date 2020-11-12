@@ -13,7 +13,7 @@ const IndexPage = () => {
   
   return (
     <Wrapper>
-      <SEO title="Home" />
+      <SEO  />
       <Content>
         <Me />
         <Showcases />

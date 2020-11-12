@@ -26,13 +26,17 @@ export const Section = styled.h1`
   -webkit-text-fill-color: transparent;
   cursor: default;
   margin-bottom: 3rem;
+
+  @media (max-width: 969px) {
+    font-size: 2rem;
+  }
 `
 
 //CARD
 export const ProjectCard = styled.div`
-  background-color: #1f2833;
+  background-color: #27323f;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 7px;
   margin-bottom: 2rem;
   transition: all 0.2s ease-in-out;
 
@@ -62,9 +66,9 @@ export const Image = styled.img`
   }
 `
 
-export const Title = styled.h3`
+export const Title = styled.h1`
   font-weight: 500;
-
+  font-size: 1.31rem;
   background: -webkit-linear-gradient(#45a29e, #66fcf1);
   background-clip: text;
   -webkit-background-clip: text;
@@ -73,7 +77,7 @@ export const Title = styled.h3`
   cursor: default;
 
   @media (max-width: 430px) {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 `
 
@@ -82,9 +86,10 @@ export const Body = styled.div`
   margin-top: 1rem;
 `
 
-export const Description = styled.p`
+export const Description = styled.h1`
   color: #c5c6c7;
   line-height: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   cursor: default;
 
@@ -195,5 +200,5 @@ export const Break = styled.div`
   width: 1px;
   margin: 2rem auto;
 
-  background-color: #66fcf1;
+  background-color: #45a29e;
 `

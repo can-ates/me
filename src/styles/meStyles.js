@@ -19,18 +19,12 @@ export const Wrapper = styled.div`
 `
 
 export const Name = styled.h1`
-  @media (min-width: 970px) {
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 4rem;
-  }
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
 
-  @media (max-width: 969px) {
-    font-size: 3rem;
-  }
-
-  @media (max-width: 430px) {
-    font-size: 2.5rem;
+  @media (max-width: 1205px) {
+    font-size: 2.6rem;
   }
 
   @media (max-width: 350px) {
@@ -58,7 +52,7 @@ export const Button = styled.button`
     position: absolute;
     content: "";
     top: -46px;
-    left: -37px;
+    left: -40px;
     display: ${props => (props.backo ? "block" : "none")};
     background: ${props => (props.backo ? `url(${props.backo})` : null)};
     background-repeat: no-repeat;
@@ -97,12 +91,75 @@ export const Navigation = styled.div`
   }
 `
 
+export const Email = styled.h1`
+  font-size: 1.2rem;
+  margin: auto 0;
+  font-weight: 400;
+  color: #66fcf1;
+
+  @media (max-width: 969px) {
+    margin: 3rem 0;
+  }
+`
+
 export const Social = styled.div`
   margin-top: auto;
   display: flex;
-
+  justify-content: space-between;
   background-color: transparent;
-  padding: 1rem;
+  padding: 1rem 1rem 0.8rem 0;
   border-radius: 10px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+`
+
+export const Resume = styled.div`
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+`
+export const Border = styled.div`
+  position: absolute;
+  height: 50px;
+  width: 60px;
+  background-color: #45a29e;
+  transform: translate(-50%, -50%);
+  top: 46.5%;
+  left: 50%;
+  border-radius: 50%;
+  z-index: -1;
+
+  &::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 20px;
+    top: 2px;
+    right: 3px;
+    background-color: #45a29e;
+  }
+`
+
+export const Image = styled.img`
+  
+`
+
+export const Icon = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 300;
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+export const SocialText = styled.span`
+  margin: 0 0.5em;
 `
