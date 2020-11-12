@@ -114,6 +114,12 @@ export const Social = styled.div`
 
 export const Resume = styled.div`
   position: relative;
+  text-decoration: none;
+
+  &:link,&:visited,&:focus,&:active{
+    color: inherit;
+    text-decoration: none;
+}
 
   &:hover {
     cursor: pointer;
@@ -151,12 +157,14 @@ export const Icon = styled.a`
   text-decoration: none;
   font-weight: 300;
 
-  &:visited {
-    color: #fff;
-  }
-
+  &:link,&:visited,&:focus,&:active{
+    color: inherit;
+    text-decoration: none;
+}
   &:hover {
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
   }
 `
 
