@@ -1,24 +1,24 @@
 require("dotenv").config()
 
-const {GATSBY_ANALYTICS} = process.env
+const { GATSBY_ANALYTICS } = process.env
 
 module.exports = {
   siteMetadata: {
-    title: 'Junior Full Stack Software Developer',
+    title: "Junior Full Stack Software Developer",
     description: `I'm a Junior Full Stack Software Developer based in Ankara, Turkey. I enjoy creating dynamic web applications, and I'm React enthusiast.`,
     author: `@Mutlu Can Ates`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: GATSBY_ANALYTICS,
         head: true,
-        
+        anonymize: true,
       },
     },
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
