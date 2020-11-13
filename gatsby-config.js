@@ -14,6 +14,7 @@ module.exports = {
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: GATSBY_ANALYTICS,
+        head: true
         
       },
     },
