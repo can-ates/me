@@ -5,6 +5,16 @@ module.exports = {
     author: `@Mutlu Can Ates`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-B333PDCGT1", // Google Analytics / GA
+          // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
