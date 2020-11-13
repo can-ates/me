@@ -1,6 +1,10 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Junior Full Stack Software Developer`,
+    title: 'Junior Full Stack Software Developer',
     description: `I'm a Junior Full Stack Software Developer based in Ankara, Turkey. I enjoy creating dynamic web applications, and I'm React enthusiast.`,
     author: `@Mutlu Can Ates`,
   },
@@ -10,7 +14,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-B333PDCGT1", // Google Analytics / GA
+          process.env.GATSBY_ANALYTICS, // Google Analytics / GA
           // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
       },
