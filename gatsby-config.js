@@ -9,16 +9,15 @@ module.exports = {
     author: `@Mutlu Can Ates`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: GATSBY_ANALYTICS,
-        head: true,
-        anonymize: true,
+        
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
