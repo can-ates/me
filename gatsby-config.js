@@ -10,13 +10,12 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          process.env.GATSBY_ANALYTICS, // Google Analytics / GA
-          // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GATSBY_ANALYTICS,
+        head: true,
+        
       },
     },
     `gatsby-plugin-react-helmet`,
