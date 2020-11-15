@@ -14,11 +14,12 @@ module.exports = {
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: GATSBY_ANALYTICS,
-        head: true
-        
+        head: true,
+        anonymize: true
       },
     },
     `gatsby-plugin-react-helmet`,
+
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,6 +48,7 @@ module.exports = {
         icon: `src/images/developer.png`, // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
