@@ -25,7 +25,7 @@ import external from "../images/external-link.svg"
 import github from "../images/github.svg"
 import linkedin from "../images/linkedin.svg"
 
-import Pdf from '../resume/Mutlu_Can_Resume.pdf'
+import Pdf from '../resume/CV_.pdf'
 
 const Me = () => {
   const [section, setSection] = useState(1)
