@@ -13,7 +13,9 @@
         "name": "JavaScript",
         "image": "javascript",
         "url": "https://www.javascript.com/"
-    },{
+    },
+    
+    {
         "name": "React",
         "image": "react",
         "url": "https://reactjs.org/"
@@ -25,7 +27,13 @@
         "name": "Gatsby",
         "image": "gatsby",
         "url": "https://www.gatsbyjs.com/"
-    },{
+    },
+    {
+        "name": "TypeScript",
+        "image": "typescript",
+        "url": "https://www.typescriptlang.org/"
+    },
+    {
         "name": "Next",
         "image": "nextjs",
         "url": "https://nextjs.org/"

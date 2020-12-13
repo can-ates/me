@@ -4,8 +4,8 @@ const { GATSBY_ANALYTICS } = process.env
 
 module.exports = {
   siteMetadata: {
-    title: "Junior Full Stack Software Developer",
-    description: `I'm a Junior Full Stack Software Developer based in Ankara, Turkey. I enjoy creating dynamic web applications, and I'm React enthusiast.`,
+    title: "Full Stack Software Engineer",
+    description: `I'm a Full Stack Software Engineer based in Ankara, Turkey. I enjoy creating dynamic web applications, and I'm React enthusiast.`,
     author: `@Mutlu Can Ates`,
   },
   plugins: [

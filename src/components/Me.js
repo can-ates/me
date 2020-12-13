@@ -42,6 +42,7 @@ const Me = () => {
       })
     })
 
+    
     observer.observe(document.querySelector("#Skills"))
   }, [])
 
@@ -51,7 +52,7 @@ const Me = () => {
         <Hello>Hello,</Hello> I'm Mutlu Can Ates.
       </Name>
       <About>
-        I'm a Junior Full Stack Software Developer based in Ankara, Turkey. I
+        I'm a Full Stack Software Engineer based in Ankara, Turkey. I
         enjoy creating dynamic web applications, and I'm React enthusiast.
       </About>
       <Navigation>
