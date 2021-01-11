@@ -89,7 +89,7 @@ const Me = () => {
         </Icon>
 
         <Icon
-          href="https://www.linkedin.com/in/mutlu-can-ates-158210184/"
+          href="https://www.linkedin.com/in/mutlu-can-ate%C5%9F-158210184/"
           target="_blank"
         >
           <Image height="25px" alt="linkedin_url" src={linkedin} />
