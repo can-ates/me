@@ -53,7 +53,7 @@ const Me = () => {
       </Name>
       <About>
         I'm a Full Stack Software Engineer based in Ankara, Turkey. I
-        enjoy creating dynamic web applications, and I'm React enthusiast.
+        enjoy developing both front-end and back-end systems, and I'm React.js and GraphQL enthusiast.
       </About>
       <Navigation>
         <Button
