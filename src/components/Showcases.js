@@ -77,9 +77,13 @@ const Showcases = () => {
                 <span>Source Code</span>
                 <GithubImage src={githubIcon} alt="" />
               </GithubButton>
-              <LiveButton as="a" href={project.web_url} target="_blank">
-                Live Preview
-              </LiveButton>
+              {project.web_url ? (
+                <LiveButton as="a" href={project.web_url} target="_blank">
+                  Live Preview
+                </LiveButton>
+              ) : (
+                <LiveButton as="a">To be deployed</LiveButton>
+              )}
             </Links>
           </ProjectCard>
         ))}
@@ -90,9 +94,7 @@ const Showcases = () => {
         <Skills>
           {data.allSkillsJson.nodes[0].techs.map(skill => (
             <Skill key={skill.name}>
-              <TechName as="a">
-                {skill.name}
-              </TechName>
+              <TechName as="a">{skill.name}</TechName>
               <Logo
                 key={`${skill.url}`}
                 height="100px"
@@ -106,9 +108,7 @@ const Showcases = () => {
         <Skills>
           {data.allSkillsJson.nodes[1].techs.map(skill => (
             <Skill key={skill.name}>
-              <TechName as="a">
-                {skill.name}
-              </TechName>
+              <TechName as="a">{skill.name}</TechName>
               <Logo
                 key={`${skill.url}`}
                 height="100px"

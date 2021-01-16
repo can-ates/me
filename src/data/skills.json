@@ -1,11 +1,11 @@
 [{
     "techs": [{
-        "name": "Html",
+        "name": "HTML",
         "image": "html5",
         "url": "https://html.com/"
     },
     {
-        "name": "Css",
+        "name": "CSS",
         "image": "css3",
         "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
@@ -16,7 +16,7 @@
     },
     
     {
-        "name": "React",
+        "name": "React.js",
         "image": "react",
         "url": "https://reactjs.org/"
     },{

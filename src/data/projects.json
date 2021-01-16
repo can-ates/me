@@ -1,4 +1,16 @@
 [{
+    "title": "Proute",
+    "description": "Proute is a project management system that helps to manage your personal and professional productivity combining tasks, comments, attachments and more.",
+    "tech": ["React", "GraphQL", "TypeScript", "MongoDB"],
+    "libraries": ["type-graphql", "typegoose", "Material UI"],
+    "git_url": "https://github.com/can-ates/Proute",
+    "web_url": "",
+    "svgs": ["react",
+        "graphql",
+         "typescript",
+         "mongodb"]
+},
+{
     "title": "Game Portal",
     "description": "Game Portal is video game database and game discovery service that consists of 350,000+ games.",
     "tech": ["React", "Next.js", "Node.js", "Firebase"],

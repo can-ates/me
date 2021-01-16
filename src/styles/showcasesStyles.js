@@ -54,7 +54,7 @@ export const Header = styled.div`
 `
 
 export const Image = styled.img`
-  opacity: 0.4;
+  opacity: 0.6;
   margin-right: 1rem;
 
   @media (max-width: 969px) {
