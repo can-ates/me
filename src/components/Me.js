@@ -10,6 +10,8 @@ import {
   Navigation,
   Button,
   Email,
+  Phone,
+  Contacts,
   Social,
   Resume,
   Image,
@@ -25,7 +27,7 @@ import external from "../images/external-link.svg"
 import github from "../images/github.svg"
 import linkedin from "../images/linkedin.svg"
 
-import Pdf from '../resume/CV_.pdf'
+import Pdf from "../resume/_CV.pdf"
 
 const Me = () => {
   const [section, setSection] = useState(1)
@@ -42,7 +44,6 @@ const Me = () => {
       })
     })
 
-    
     observer.observe(document.querySelector("#Skills"))
   }, [])
 
@@ -52,8 +53,9 @@ const Me = () => {
         <Hello>Hello,</Hello> I'm Mutlu Can Ates.
       </Name>
       <About>
-        I'm a Full Stack Software Engineer based in Ankara, Turkey. I
-        enjoy developing both front-end and back-end systems, and I'm React.js and GraphQL enthusiast.
+        I'm a Full Stack Software Engineer based in Ankara, Turkey. I enjoy
+        developing both front-end and back-end systems, and I'm React.js and
+        GraphQL enthusiast.
       </About>
       <Navigation>
         <Button
@@ -75,9 +77,14 @@ const Me = () => {
           Skills
         </Button>
       </Navigation>
-      <Email>Shoot me an email: canates.dev@gmail.com</Email>
+      <Contacts>
+        <Email>Shoot me an email: canates.dev@gmail.com</Email>
+          <span>OR</span>
+        <Phone>Give me a call: +90 530 826 86 97</Phone>
+      </Contacts>
+
       <Social>
-        <Resume as='a' href={Pdf} target='_blank' >
+        <Resume as="a" href={Pdf} target="_blank">
           <Image style={{ borderRadius: "50%" }} width="55px" src={me} alt="" />
           <Border />
         </Resume>

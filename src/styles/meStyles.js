@@ -91,15 +91,28 @@ export const Navigation = styled.div`
   }
 `
 
-export const Email = styled.h1`
-  font-size: 1.2rem;
+export const Contacts = styled.div`
   margin: auto 0;
-  font-weight: 400;
-  color: #66fcf1;
 
   @media (max-width: 969px) {
     margin: 3rem 0;
   }
+`
+
+export const Email = styled.h1`
+  font-size: 1.2rem;
+
+  font-weight: 400;
+  color: #66fcf1;
+  margin-bottom: 1em;
+`
+
+export const Phone = styled.h1`
+  font-size: 1.2rem;
+
+  font-weight: 400;
+  color: #66fcf1;
+  margin-top: 1em;
 `
 
 export const Social = styled.div`
@@ -116,10 +129,13 @@ export const Resume = styled.div`
   position: relative;
   text-decoration: none;
 
-  &:link,&:visited,&:focus,&:active{
+  &:link,
+  &:visited,
+  &:focus,
+  &:active {
     color: inherit;
     text-decoration: none;
-}
+  }
 
   &:hover {
     cursor: pointer;
@@ -136,8 +152,8 @@ export const Border = styled.div`
   border-radius: 50%;
   z-index: -1;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     height: 25px;
     width: 20px;
@@ -147,9 +163,7 @@ export const Border = styled.div`
   }
 `
 
-export const Image = styled.img`
-  
-`
+export const Image = styled.img``
 
 export const Icon = styled.a`
   display: flex;
@@ -157,10 +171,13 @@ export const Icon = styled.a`
   text-decoration: none;
   font-weight: 300;
 
-  &:link,&:visited,&:focus,&:active{
+  &:link,
+  &:visited,
+  &:focus,
+  &:active {
     color: inherit;
     text-decoration: none;
-}
+  }
   &:hover {
     cursor: pointer;
     color: inherit;
