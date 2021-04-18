@@ -12,6 +12,7 @@ import Showcases from "../components/Showcases"
 const IndexPage = () => {
   
   return (
+    <React.Fragment>
     <Wrapper>
       <SEO  />
       <Content>
@@ -19,6 +20,7 @@ const IndexPage = () => {
         <Showcases />
       </Content>
     </Wrapper>
+    </React.Fragment>
   )
 }
 
