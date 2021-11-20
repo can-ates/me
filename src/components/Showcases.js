@@ -9,6 +9,7 @@ import {
   Header,
   Image,
   Title,
+  HowLong,
   Body,
   Description,
   Links,
@@ -47,14 +48,60 @@ const Showcases = () => {
             description
           }
         }
+        allExperiencesJson {
+          nodes {
+            company
+            role
+            howLong
+            description
+            web_url
+            svgs
+          }
+        }
       }
     `
   )
 
   return (
     <Wrapper>
-      <Container id="Projects">
-        <Section>Projects</Section>
+      <Container>
+        <Section>Experiences</Section>
+        {data.allExperiencesJson.nodes.map(({company, description, web_url, svgs, howLong}) => (
+          <ProjectCard key={company}>
+            <Header
+              section="Experiences"
+            >
+            {svgs.map(svg => (
+                  <Image
+                    key={`${svg}-${company}`}
+                    src={require("../images/" + svg + ".svg")}
+                  />
+                ))}
+              <Title
+                section="Experiences"
+              >
+                {company}
+              </Title>
+              <HowLong>
+                {howLong}  
+              </HowLong>
+            </Header>
+            <Body>
+              <Description>{description}</Description>
+            </Body>
+            <Links>
+              
+              {web_url && (
+                <LiveButton as="a" href={web_url} target="_blank">
+                  Company Page
+                </LiveButton>
+              )}
+            </Links>
+          </ProjectCard>
+        ))}
+      </Container>
+      <Container>
+        <Section id="Projects">Projects</Section>
         {data.allProjectsJson.nodes.map(project => (
           <ProjectCard key={project.title}>
             <Header>

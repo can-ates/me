@@ -58,7 +58,7 @@ export const Button = styled.button`
     background-repeat: no-repeat;
     background-size: 100% 95%;
     height: 125px;
-    width: 175px;
+    width: ${({section}) => (section === 'Experiences' ? '225px' : section === 'Skills' ? '145px' : '175px')};
     z-index: -2;
   }
 
