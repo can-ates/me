@@ -50,7 +50,8 @@ export const ProjectCard = styled.div`
 //CARD_HEADER
 export const Header = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${({section}) => (section === 'Experiences' ? 'flex-start' : 'space-between')};
+  align-items: center;
 `
 
 export const Image = styled.img`
@@ -68,7 +69,7 @@ export const Image = styled.img`
 
 export const Title = styled.h1`
   font-weight: 500;
-  font-size: 1.31rem;
+  font-size: ${({section}) => (section === 'Experiences' ? '1.85rem' : '1.31rem')};
   background: -webkit-linear-gradient(#45a29e, #66fcf1);
   background-clip: text;
   -webkit-background-clip: text;
@@ -79,6 +80,13 @@ export const Title = styled.h1`
   @media (max-width: 430px) {
     font-size: 1.1rem;
   }
+`
+
+export const HowLong = styled.h6`
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #c5c6c7;
 `
 
 //CARD_BODY

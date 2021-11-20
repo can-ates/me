@@ -10,7 +10,6 @@ import {
   Navigation,
   Button,
   Email,
-  Phone,
   Contacts,
   Social,
   Resume,
@@ -30,21 +29,27 @@ import linkedin from "../images/linkedin.svg"
 import Pdf from "../resume/_CV.pdf"
 
 const Me = () => {
-  const [section, setSection] = useState(1)
+  const [section, setSection] = useState("Experiences")
 
   //TODO FIX OBSERVER API FOR LARGE SCREENS
   useEffect(() => {
     let observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          setSection(2)
-        } else {
-          setSection(1)
+          setSection(entry.target.id)
         }
       })
     })
-
-    observer.observe(document.querySelector("#Skills"))
+    const sections = [document.querySelector("#Projects"), document.querySelector('#Skills')]
+    sections.forEach(section => observer.observe(section))
+    
+    window.addEventListener("scroll", function(){
+      if (this.window.scrollY === 0) {
+        setSection("Experiences")
+      } else if (this.window.scrollY > 0 && this.window.scrollY < 150) {
+        setSection("Projects");
+      }
+    });
   }, [])
 
   return (
@@ -58,29 +63,39 @@ const Me = () => {
         GraphQL enthusiast.
       </About>
       <Navigation>
-        <Button
-          backo={section === 1 ? bgBrush : false}
+      <Button
+          backo={section === "Experiences" && bgBrush}
           onClick={() => {
-            setSection(1)
+            setSection("Experiences")
+            scrollTo("#Experiences")
+          }}
+          section="Experiences"
+        >
+          Experiences
+        </Button>
+        <Button
+          backo={section === "Projects" && bgBrush}
+          onClick={() => {
+            setSection("Projects")
             scrollTo("#Projects")
           }}
+          section="Projects"
         >
           Projects
         </Button>
         <Button
-          backo={section === 2 ? bgBrush : false}
+          backo={section === "Skills" && bgBrush}
           onClick={() => {
-            setSection(2)
+            setSection("Skills")
             scrollTo("#Skills")
           }}
+          section="Skills"
         >
           Skills
         </Button>
       </Navigation>
       <Contacts>
         <Email>Shoot me an email: canates.dev@gmail.com</Email>
-          <span>OR</span>
-        <Phone>Give me a call: +90 530 826 86 97</Phone>
       </Contacts>
 
       <Social>
